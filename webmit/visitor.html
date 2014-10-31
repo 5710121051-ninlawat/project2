@@ -5,6 +5,29 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="imagetoolbar" content="no" />
 		<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+
+		
+		<script type="text/javascript">
+			<!--//
+			function sizeFrame(frameId) {
+
+				var F = document.getElementById(frameId);
+				if(F.contentDocument) {
+					F.height = F.contentDocument.documentElement.scrollHeight+30; //FF 3.0.11, Opera 9.63, and Chrome
+				} else {
+
+
+
+					F.height = F.contentWindow.document.body.scrollHeight+30; //IE6, IE7 and Chrome
+
+				}
+
+			}
+
+			// window.onload=sizeFrame; 
+
+			//-->
+		</script>
 	
 	</head>
 
@@ -108,12 +131,12 @@
 			<div id="container">
 				<div id="content"><h1> Content IFrame</h1>
 				
-					<div class="stockIframe">
-					<iframe src="content/Study Program.html"  name="iframe" width="100%" height="500px" scrolling="no" frameborder="no" >	
 					
-					</iframe>
+						<iframe width="100%" name="iframe"id="myFrame" src="content/Study Program.html" scrolling="no" frameborder="0" onload="sizeFrame('myFrame')">
 					
-					</div>	
+						</iframe>
+					
+						
 					<h1>&lt;h1&gt; to &lt;h6&gt; - Headline Colour and Size Are All The Same</h1>
 					<img class="imgr" src="images/demo/imgr.gif" alt="" width="125" height="125" />
 					<p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
