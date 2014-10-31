@@ -5,6 +5,20 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="imagetoolbar" content="no" />
 		<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+		<script type="text/javascript">
+			<!--//
+			function sizeFrame(frameId) {
+				var F = document.getElementById(frameId);
+				if(F.contentDocument) {
+					F.height = F.contentDocument.documentElement.scrollHeight+30; //FF 3.0.11, Opera 9.63, and Chrome
+				} else {
+					F.height = F.contentWindow.document.body.scrollHeight+30; //IE6, IE7 and Chrome
+				}
+			}
+
+			// window.onload=sizeFrame; 
+		</script>
+
 	</head>
 	<body id="top">
 		<div class="wrapper col1">
@@ -51,7 +65,7 @@
 								<li><a href="#">Link 3</a></li>
 							</ul>
 						</li>   -->
-						<li class="active"><a href="student.html">For STUDENT</a>
+						<li class="active"><a href="student.html" target="_container">For STUDENT</a>
 						   <ul>
 						   	<li><a href="#">ยื่นแบบวิทยานิพนธ์/สารนิพนธ์ออนไลน์</a></li>
 							<li><a href="#">แจ้งสำเร็จการศึกษา</a></li>
@@ -101,7 +115,10 @@
 		<div class="wrapper col5">
 			<div id="container">
 				<div id="content">
-					<h1>&lt;h1&gt; to &lt;h6&gt; - Headline Colour and Size Are All The Same</h1>
+						<iframe width="100%" name="iframe"id="myFrame" src=".\student\first-student.html" scrolling="no" frameborder="0" onload="sizeFrame('myFrame')">					
+						</iframe>
+
+					<!-- <h1>&lt;h1&gt; to &lt;h6&gt; - Headline Colour and Size Are All The Same</h1>
 					<img class="imgr" src="images/demo/imgr.gif" alt="" width="125" height="125" />
 					<p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
 					<p>Dapiensociis <a href="#">temper donec auctortortis cumsan</a> et curabitur condis lorem loborttis leo. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
@@ -187,8 +204,9 @@
 								<input name="reset" type="reset" id="reset" tabindex="5" value="Reset Form" />
 							</p>
 						</form>
-					</div>
+					</div> -->
 				</div>
+				
 				<div id="column">
 					<div class="subnav">
 						<h2>Secondary Navigation</h2>
