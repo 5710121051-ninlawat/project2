@@ -13,7 +13,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 body{
 	margin:0;
 	padding:0;
-	font-size:12px;
+	font-size:14px;
 	font-family:verdana, Arial, Helvetica, sans-serif;
 	color:#FFFFFF;
 	
@@ -110,7 +110,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	}
 
 #header #newsletter p{
-	margin:0 0 8px 0;
+	margin:0 0 18px 10px;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	}
 
